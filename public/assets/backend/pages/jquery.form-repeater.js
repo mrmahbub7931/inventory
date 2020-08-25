@@ -7,7 +7,7 @@
 $(document).ready(function () {
   'use strict';
 
-  $('.repeater-default').repeater();
+  $('.repeater-default').repeaterVal();
 
   $('.repeater-custom-show-hide').repeater({
     show: function () {

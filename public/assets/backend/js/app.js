@@ -10,7 +10,7 @@
 (function ($) {
 
     'use strict';
-
+    
     function initSlimscroll() {
         $('.slimscroll').slimscroll({
             height: 'auto',
@@ -110,6 +110,7 @@
         initSerach();
         initComponents();
         Waves.init();
+        
     }
 
     init();

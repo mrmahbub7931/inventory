@@ -264,7 +264,7 @@ strong {
 }
 
 .topbar .topbar-left {
-  background-color: #44a2d2;
+  background-color: #517fa4;
   float: left;
   text-align: center;
   height: 70px;
@@ -286,7 +286,7 @@ strong {
 }
 
 .topbar .topbar-main {
-  background-color: #44a2d2;
+  background-color: #517fa4;
 }
 
 .topbar .container-fluid {
@@ -294,7 +294,7 @@ strong {
 }
 
 .navbar-custom {
-  background: #44a2d2;
+  background: #517fa4;
   min-height: 70px;
   position: relative;
 }
@@ -4386,6 +4386,7 @@ input[switch="purple"]:checked + label {
 48. Widgets
    ====== */
 /*== Project Lonch ==*/
+
 .icon-info i {
   font-size: 36px;
 }

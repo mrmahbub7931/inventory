@@ -24,6 +24,7 @@
     <link href="{{ asset('assets/backend/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/backend/css/icons.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/backend/css/style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
     @stack('css')
 </head>
 <body>
@@ -47,10 +48,23 @@
     <script src="{{ asset('assets/backend/plugins/jquery-knob/excanvas.js') }}"></script>
     <script src="{{ asset('assets/backend/plugins/jquery-knob/jquery.knob.min.js') }}"></script>  
     <script src="{{ asset('assets/backend/pages/jquery.dashboard.init.js') }}"></script>
-
+    
     <!-- App js -->
     <script src="{{ asset('assets/backend/js/app.js') }}"></script>
-
+    {{-- cdn link --}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    {!! Toastr::message() !!}
+    <script>
+        @if( $errors->any() ) 
+            @foreach( $errors->all() as $error )
+                toastr.error('{{ $error }}','Error',{
+                    "closeButton": true,
+                    "progressBar": true,
+                });
+            @endforeach
+        @endif
+    </script>
     @stack('js')
 </body>
 </html>

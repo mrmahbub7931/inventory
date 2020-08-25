@@ -30,7 +30,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href=""><b>Admin</b>LTE</a>
   </div>
 
   <div class="register-box-body">
@@ -65,9 +65,9 @@
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
-            <label>
-              <input type="checkbox" name="terms"> I agree to the <a href="#">terms</a>
-            </label>
+            {{-- <label>
+              <input type="checkbox"> I agree to the <a href="#">terms</a>
+            </label> --}}
           </div>
         </div>
         <!-- /.col -->

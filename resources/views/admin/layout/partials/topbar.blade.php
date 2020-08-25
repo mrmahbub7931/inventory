@@ -43,7 +43,7 @@
                         <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="false" aria-expanded="false">
                     <img src="{{ asset('assets/backend/images/users/user-1.jpg') }}" alt="profile-user" class="rounded-circle" /> 
-                            <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                            <span class="ml-1 nav-user-name hidden-sm">{{ Auth::user()->name }} <i class="mdi mdi-chevron-down"></i> </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
@@ -89,6 +89,30 @@
                             Dashboard
                         </a>
                     </li>
+                    <li class="has-submenu">
+                        <a href="#"><i class="mdi mdi-account-multiple"></i>Employee</a>
+                        <ul class="submenu">
+                            <li><a href=" {{ route('admin.employee.index') }} ">List Employees</a></li>
+                            <li><a href=" {{ route('admin.employee.create') }} ">New Employee</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="has-submenu">
+                        <a href="#"><i class="mdi mdi-account-multiple"></i>Customers</a>
+                        <ul class="submenu">
+                            <li><a href=" {{ route('admin.customers.index') }} ">List Customers</a></li>
+                            <li><a href=" {{ route('admin.customers.create') }} ">New Customer</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="has-submenu">
+                        <a href="#"><i class="mdi mdi-account-multiple"></i>Suppliers</a>
+                        <ul class="submenu">
+                            <li><a href=" {{ route('admin.suppliers.index') }} ">List Suppliers</a></li>
+                            <li><a href=" {{ route('admin.suppliers.create') }} ">New Supplier</a></li>
+                        </ul>
+                    </li>
+
                     @endif
                     {{-- <li class="has-submenu">
                         <a href="#"><i class="mdi mdi-book-open-page-variant"></i>Pages</a>

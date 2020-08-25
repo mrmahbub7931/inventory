@@ -23,4 +23,10 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin','as' => 'admin.','namespace' => 'Admin','middleware' => ['auth']], function () {
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+    Route::resources([
+        'employee' => 'EmployeeController',
+        'education' => 'EducationController',
+        'customers' => 'CustomerController',
+        'suppliers' => 'SupplierController',
+    ]);
 });

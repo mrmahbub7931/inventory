@@ -13,8 +13,8 @@
             <div class="page-title-box">
                 <div class="float-right">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Amezia</a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Inventory</a></li>
+                        <li class="breadcrumb-item"><a href=" {{ route('admin.dashboard') }} ">Dashboard</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div>
